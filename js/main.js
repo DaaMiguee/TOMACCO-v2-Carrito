@@ -2,6 +2,9 @@
 let productsContainer = document.getElementById("productsContainer");
 
 let botonCarrito = document.getElementById("boton-carrito")
+//agregado arreglo que ingresaran al carrito
+let carrito = [];
+let totalProductos = 0
 
 //declaro array con mis productos
 const productos = [
@@ -53,7 +56,7 @@ const mostrarCarrito = () => {
                     style: {
                         background: "#00795b",
                     },
-                    }).showToast();
+                }).showToast();
             });
         });
 };
@@ -103,7 +106,7 @@ productos.forEach((producto) => {
             style: {
                 background: "#00795b",
             },
-            }).showToast();
+        }).showToast();
     });
 });
 
